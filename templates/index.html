@@ -1,0 +1,505 @@
+{% load static %}
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<style>
+	#bg:after {	
+				background-image: url("{% static 'images/bg.jpg' %}");
+				
+				}
+	.image:before{background-image: url("{% static 'images/overlay.png' %}");
+				}
+</style>
+<html>
+	<head>
+		<title>Kenting</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}"/>
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}"/></noscript>
+	</head>
+	<!--<script type="text/javascript">
+		function get_data(id){
+		    $("#GooseResponse").click(function() {
+		        $.ajax({
+		        	type:"GET",
+		         	url: "/result",
+		         	data:{spreadsheet: id},
+		            dataType: "json",
+		            success : function(json) {
+		                alert("Successfully sent the URL to Django");
+		            },
+		            error : function(xhr,errmsg,err) {
+		                alert("Could not send URL to Django. Error");
+		            }
+		        });
+		    });
+		}
+	</script>-->
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-car"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>國境之南</h1>
+								<p>這裡是臺灣島的“天涯海角”。秀麗的古城風光，延續著悠久的歷史，當你踏入這塊土地，碧海藍天，清新的文藝氣息，立刻把你融化。</br>優美的國家公園、地道的海鮮小吃、潔淨的海景、廣袤的沙灘、淳樸的民風、還有各種刺激的娛樂項目…這些，足以讓你曼妙旅程，放鬆自我…</p>
+							</div>
+						</div>
+
+						<nav>
+							<ul>
+								<li><a href="#鵝鑾鼻公園">鵝鑾鼻公園</a></li>
+								<li><a href="#白沙灣海灘">白沙灣海灘</a></li>
+								<li><a href="#墾丁國家公園">墾丁國家公園</a></li>
+								<li><a href="#墾丁大街">墾丁大街</a></li>
+								<li><a href="#龍磐公園">龍磐公園</a></li>
+								
+							</ul>
+						
+
+
+							<ul>
+								<li><a href="#阿嘉的家">阿嘉的家</a></li>
+								<li><a href="#國立海洋生物博物館">國立海洋生物博物館</a></li>
+								<li><a href="#關山風景區">關山風景區</a></li>
+								<li><a href="#南灣遊憩區">南灣遊憩區</a></li>
+								<li><a href="#後壁湖海港">後壁湖海港</a></li>
+							</ul>
+						
+							<ul>
+
+						<li><a href="#天氣">天氣</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+
+
+
+						</nav>
+
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- 鵝鑾鼻公園 -->
+							<article id="鵝鑾鼻公園">
+								<h2 class="major">鵝鑾鼻公園</h2>
+
+								<span class="image main"><marquee behavior="alternate" style="border: 2px solid #008B8B" scrolldelay="60" bgcolor="#B0E0E6" width="560" height="180"><img src="{% static 'images/pic5.jpg' %}" title="鵝鑾鼻公園" alt="" />&nbsp;<img src="{% static 'images/pic5.jpg' %}" title="鵝鑾鼻公園" alt="" /></span></a></marquee>
+								<p>鵝鑾鼻位於臺灣南端，曾經被評為臺灣八景之一，園內最著名的要屬百年歷史的鵝鑾鼻燈塔。此外，園內有著珊瑚礁石灰岩地形，藍天碧海、巨礁林立、怪石嶙峋、綠樹白沙，形成一幅美麗的山海圖畫，令人流連。</p>
+								<input type="button" value="給點回饋" onclick="location.href='https://docs.google.com/forms/d/12ZboCCRqAg1NGlcNq1WRlmAC_i8Pa9-sgfr_EoDSHjA/edit'">
+								<input type="button" id="GooseResponse" value="看看別人怎麼說" onclick="location.href='http://127.0.0.1:8000/result'">
+								<!--"get_data('GooseResponse')"-->
+							</article>
+
+						<!-- 白沙灣海灘 -->
+							<article id="白沙灣海灘">
+								<h2 class="major">白沙灣海灘</h2>
+
+								<span class="image main"><marquee behavior="alternate" style="border: 2px solid #008B8B" scrolldelay="60" bgcolor="#B0E0E6" width="560" height="200"><img src="{% static 'images/pic04.jpg' %}" title="白沙灣海灘" alt="" />&nbsp;<img src="{% static 'images/pic04.jpg' %}" title="白沙灣海灘" alt="" />&nbsp;<img src="{% static 'images/pic04.jpg' %}" title="白沙灣海灘" alt="" /></span></a></marquee>
+							
+								<p>墾丁國家公園內的白沙灣，是位於海岸景觀道路沿岸,以潔白細緻的白砂而得名的海灣,500公尺長的沙灘,相當適合海上活動。沙灘南北為黝灰的珊瑚礁岩,潮間帶比較短小,生物種類較少。北邊的海域,水質清澈。</p>
+								<input type="button" value="給點回饋" onclick="location.href='https://docs.google.com/forms/d/1wfpc1dAPczt0UjvdAmz8ZoO397xt-yUpgpuuXHpIJWY/edit'">
+								<input type="button" value="看看別人怎麼說" onclick="location.href='http://127.0.0.1:8000/result02'">
+							</article>
+
+						<!-- 墾丁國家公園 -->
+							<article id="墾丁國家公園">
+								<h2 class="major">墾丁國家公園</h2>
+								
+								<span class="image main"><marquee style="border: 2px solid #008B8B" scrolldelay="60" bgcolor="#B0E0E6" width="560" height="240"><img src="{% static 'images/pic6.jpg' %}" title="墾丁國家公園" alt="" /></span></a></marquee>
+								<p>墾丁國家公園位於臺灣南端恒春半島之南側，是臺灣的第一座國家公園，公園三面環海，是臺灣本島唯一熱帶區域的國家公園，它也是同時涵蓋陸地與海域的國家公園。</p>
+								<input type="button" value="給點回饋" onclick="location.href='https://docs.google.com/forms/d/15tTa_e33FEiwZ1ayOvNkkNcZ3tHL87Lf01E6WtCpWJ8/edit'">
+								<input type="button" value="看看別人怎麼說" onclick="location.href='http://127.0.0.1:8000/result03'">
+							</article>
+
+						<!-- 墾丁大街 -->
+							<article id="墾丁大街">
+								<h2 class="major">墾丁大街</h2>
+
+								<span class="image main"><marquee behavior="alternate" style="border: 2px solid #008B8B" scrolldelay="60" bgcolor="#B0E0E6" width="560" height="240"><img src="{% static 'images/pic72.jpg' %}" title="墾丁大街" alt="" />&nbsp;<img src="{% static 'images/pic72.jpg' %}" title="墾丁大街" alt="" />&nbsp;<img src="{% static 'images/pic72.jpg' %}" title="墾丁大街" alt="" /></span></a></marquee>
+								<p>墾丁大街是墾丁國家公園內最熱鬧的商店街，遊客必去之地。這一帶分佈著較為密集的各色民宿，選擇在墾丁過一兩夜，更加從容地享受小鎮之美，一定不會後悔。</p>
+								<input type="button" value="給點回饋" onclick="location.href='https://docs.google.com/forms/d/1dEOpYuLFkvPL6uCqXPd1PPYWrK7nEApdaWVx89gJoG0/edit'">
+								<input type="button" value="看看別人怎麼說" onclick="location.href='http://127.0.0.1:8000/result04'">
+							</article>
+
+							<!--龍磐公園 -->
+							<article id="龍磐公園">
+								<h2 class="major">龍磐公園</h2>
+
+								<span class="image main"><marquee behavior="alternate" style="border: 2px solid #008B8B" scrolldelay="60" bgcolor="#B0E0E6" width="560" height="220"><img src="{% static 'images/pic83.jpg' %}" title="龍磐公園" alt="" />&nbsp;<img src="{% static 'images/pic83.jpg' %}" title="龍磐公園" alt="" />&nbsp;<img src="{% static 'images/pic83.jpg' %}" title="龍磐公園" alt="" /></span></a></marquee>
+								<p>龍磐公園是墾丁國家公園的特別景觀區，地形為上升的石灰岩，景觀相當豐富，廣袤的草原讓視野無屏障，夜晚更沒有光害，絕對是旅客來到墾丁賞日出、觀星、遠眺太平洋的好地方，更是台灣難得一見可賞日出與日落的地區，但多草地有暗洞，行走時勿偏離主要幹道。公園對面的聯勤活動中心內有石灰岩地形景觀，面積廣達7、80公頃的壯觀鐘乳石，絕對能讓您嘆為觀止。</p>
+								<input type="button" value="給點回饋" onclick="location.href='https://docs.google.com/forms/d/1AG-7ommiqFv8js2vfXcQijR5uKnz92h2y5vnPBOfWCI/edit'">
+								<input type="button" value="看看別人怎麼說" onclick="location.href='http://127.0.0.1:8000/result05'">
+							</article>
+
+
+							<!-- 阿嘉的家 -->
+							<article id="阿嘉的家">
+								<h2 class="major">阿嘉的家</h2>
+
+								<span class="image main"><marquee behavior="alternate" style="border: 2px solid #008B8B" scrolldelay="60" bgcolor="#B0E0E6" width="560" height="260"><img src="{% static 'images/pic93.jpg' %}" title="阿嘉的家" alt="" />&nbsp;<img src="{% static 'images/pic93.jpg' %}" title="阿嘉的家" alt="" /></span></a></marquee>
+								<p>2008年上映的臺灣電影《海角七號》十分賣座，讓拍攝地臺灣恒春鎮紅遍大陸、港臺三地，電影場景成為熱門旅遊景點，其中男主角居住的“阿嘉的家”成為影迷朝聖必到的第一站。</p>
+								<input type="button" value="給點回饋" onclick="location.href='https://docs.google.com/forms/d/17HZgnWkt4Roiytc47-E3M2Ss5WxYqvkcAsdR_67Ho3w/edit'">
+								<input type="button" value="看看別人怎麼說" onclick="location.href='http://127.0.0.1:8000/result06'">
+
+
+							</article>
+
+						<!-- 國立海洋生物博物館 -->
+							<article id="國立海洋生物博物館">
+								<h2 class="major">國立海洋生物博物館</h2>
+
+								<span class="image main"><marquee behavior="alternate" style="border: 2px solid #008B8B" scrolldelay="60" bgcolor="#B0E0E6" width="560" height="200"><img src="{% static 'images/picsea.jpg' %}" title="國立海洋生物博物館" alt="" />&nbsp;<img src="{% static 'images/picsea.jpg' %}" title="國立海洋生物博物館" alt="" /></span></a></marquee>
+								<p>國立海洋生物博物館，簡稱海生館，位於臺灣屏東縣車城鄉，地處墾丁國家公園西北角龜山山麓的臨海地區，是以海洋生物為主題的大型博物館，也是臺灣最大的海洋館。</p>
+								<input type="button" value="給點回饋" onclick="location.href='https://docs.google.com/forms/d/1DwuAXzoqLTAGc-veb2-p9XiJwludDmvExQrUz9Aok5o/edit'">
+								<input type="button" value="看看別人怎麼說" onclick="location.href='http://127.0.0.1:8000/result07'">
+							</article>
+
+						<!-- 關山風景區 -->
+							<article id="關山風景區">
+								<h2 class="major">關山風景區</h2>
+
+								<span class="image main"><marquee style="border: 2px solid #008B8B" scrolldelay="60" bgcolor="#B0E0E6" width="560" height="220"><img src="{% static 'images/pic113.jpg' %}" title="關山風景區" alt="" /></span></a></marquee>
+
+								<p>關山風景區位於屏東縣恒春半島西南方，關山以前叫高山岩，海拔甚高，視野良好，由上往下俯瞰景色，整條紅紫坑海岸線盡收眼底。夕陽西下時，海面泛起絲絲霞光，襯托珊瑚礁景觀，別具蒼涼美，因此有“關山夕照”之名，名列南“臺灣八景”之一。</p>
+								<input type="button" value="給點回饋" onclick="location.href='https://docs.google.com/forms/d/1uDvjuSjcNGeyBwGJZpXxfJl6Vw3rlSDVGBsqIbnDrRg/edit'">
+								<input type="button" value="看看別人怎麼說" onclick="location.href='http://127.0.0.1:8000/result08'">
+							</article>
+
+						<!-- 南灣遊憩區 -->
+							<article id="南灣遊憩區">
+								<h2 class="major">南灣遊憩區</h2>
+
+								<span class="image main"><marquee style="border: 2px solid #008B8B" scrolldelay="60" bgcolor="#B0E0E6" width="560" height="230"><img src="{% static 'images/pic1122.jpg' %}" title="南灣遊憩區" alt="" /></span></a></marquee>
+								<p>這裡有一片很好看的海峽線。而且這個海灘是純正的白色的沙灘就像珍珠一樣，遠遠看去空氣特別好，很值得推薦。而且人也比較少。</p>
+								<input type="button" value="給點回饋" onclick="location.href='https://docs.google.com/forms/d/1d2HF7OvlpU1F9Vr2XBGHtpF4bZv-YAJS3pzlOODLZ80/edit'">
+								<input type="button" value="看看別人怎麼說" onclick="location.href='http://127.0.0.1:8000/result09'">
+							</article>
+
+							<!--後壁湖海港 -->
+							<article id="後壁湖海港">
+								<h2 class="major">後壁湖海港</h2>
+								<span class="image main"><marquee behavior="alternate" style="border: 2px solid #008B8B" scrolldelay="60" bgcolor="#B0E0E6" width="560" height="240"><img src="{% static 'images/pic66.jpg' %}" title="後壁湖海港" alt="" />&nbsp;<img src="{% static 'images/pic66.jpg' %}" title="後壁湖海港" alt="" /></span></a></marquee>
+								<p>後壁湖港是墾丁國家公園內最大的漁港，是漁港跟遊艇港功能合一的複合式港口，經常可見漁船與遊艇相偕出港，另有一番風味。恒春鎮漁會在此設置了以魟魚為造型的漁會大樓，一改以往魚市場髒亂的印象，你可以舒心地在清潔的魚市閒逛。</p>
+								<input type="button" value="給點回饋" onclick="location.href='https://docs.google.com/forms/d/1hNJC-gXNSorkBARnUnLohlSYjWRpCyG5KwK21Nwj-2A/edit'">
+								<input type="button" value="看看別人怎麼說" onclick="location.href='http://127.0.0.1:8000/result10'">
+							</article>
+
+							<article id="天氣">
+								<h2 class="major">天氣</h2>
+								<a href="#">
+								<iframe width="550" height="220" src="https://embed.windy.com/embed2.html?lat=22.6714&lon=120.4881&type=forecast&metricWind=kt&metricTemp=%C2%B0C" frameborder="0"></iframe>
+								</a>
+							</article>
+							
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+		
+								<form method="post" action="#">
+									<div class="field half first" >
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button special">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions vertical">
+										<li><a href="#" class="button special">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button special">Special</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button special icon fa-download">Icon</a></li>
+										<li><a href="#" class="button icon fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button special disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="field half first">
+											<label for="demo-name">Name</label>
+											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+										</div>
+										<div class="field half">
+											<label for="demo-email">Email</label>
+											<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+										</div>
+										<div class="field">
+											<label for="demo-category">Category</label>
+											<div class="select-wrapper">
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+										</div>
+										<div class="field half first">
+											<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+											<label for="demo-priority-low">Low</label>
+										</div>
+										<div class="field half">
+											<input type="radio" id="demo-priority-high" name="demo-priority">
+											<label for="demo-priority-high">High</label>
+										</div>
+										<div class="field half first">
+											<input type="checkbox" id="demo-copy" name="demo-copy">
+											<label for="demo-copy">Email me a copy</label>
+										</div>
+										<div class="field half">
+											<input type="checkbox" id="demo-human" name="demo-human" checked>
+											<label for="demo-human">Not a robot</label>
+										</div>
+										<div class="field">
+											<label for="demo-message">Message</label>
+											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+					
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg" style="background-image: url('{% static 'images/bg1.jpg' %}'); 
+				background-repeat:no-repeat; 
+				background-position: center;
+				background-attachment: fixed;
+
+				background-color:#ff8888">
+			
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/skel.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
